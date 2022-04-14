@@ -14,3 +14,4 @@ audio_path = key_log_path
 
 audio_sample_freq=44100
 audio_time =  10
+ss_path = key_log_path
