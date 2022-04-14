@@ -31,6 +31,6 @@ def computer_info():
         net_info.join()
         sysinfo = Thread(target=write_system_info())
         sysinfo.start()
-computer_info()
+
 
 
