@@ -21,7 +21,7 @@ It consists of a keylogger,  audio spy , screenshot grabber, system reconnaissan
 # How to run  
 ### Setup  
 - modify `vars.py` to change configurations
-- modify the marked with **must modify** lines in `driver.py`  
+- modify the lines marked with **must modify** lines in `driver.py`  
 
 ### Run the spyware
 > :warning: **Intended for Educational Purposes only.**  
