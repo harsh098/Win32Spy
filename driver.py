@@ -44,7 +44,7 @@ def email_files():
             #send(fromaddr,toaddr,filename,sentfile='logs.txt',password=None,smtp_server = 'smtp.gmail.com',smtp_port=587) #use this template uses gmail smtp by default change smtp_server and smtp_port for other email providers 
             #password=None takes password as input
             #sentfile sets filename by which file is sent
-            send("sender@gmail.com","receiver@gmail.com",f'{paths[file]}\{file}',password='password_string',sentfile=file)
+            send("sender@gmail.com","receiver@gmail.com",f'{paths[file]}\{file}',password='password_string',sentfile=file) #must modify
         else:
             continue
 
