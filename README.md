@@ -1,5 +1,5 @@
 # Win32Spy
-A simple multithreaded and a multiprocessing enabled spyware written as a hobby project .  
+A Windows based simple multithreaded and a multiprocessing enabled spyware written as a hobby project .  
 It consists of a keylogger,  audio spy , screenshot grabber, system reconnaissance and a clipboard spy  
   
 # Dependencies:  
