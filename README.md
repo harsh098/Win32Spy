@@ -27,7 +27,7 @@ It consists of a keylogger,  audio spy , screenshot grabber, system reconnaissan
 > :warning: **Intended for Educational Purposes only.**  
 
 #### Execute the following command in a `.bat`(Windows Batch) script an run it.
-> 🏹 **Tip** Add `@echo off` at the start of batch file to avoid the Windows Console Prompt from appearing  
+> 🏹 **Pro Tip::** Add `@echo off` at the start of batch file to avoid the Windows Console Prompt from appearing  
   
 `pythonw.exe driver.py`
 
